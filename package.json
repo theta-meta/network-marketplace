@@ -1,0 +1,87 @@
+{
+  "name": "theta-wallet-web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ledgerhq/hw-app-eth": "^4.72.1",
+    "@ledgerhq/hw-transport-u2f": "^4.72.1",
+    "@ledgerhq/hw-transport-webusb": "^6.2.0",
+    "@thetalabs/theta-js": "^0.0.69",
+    "@thetalabs/tnt20-contract-metadata": "^1.0.5",
+    "@ukstv/jazzicon-react": "^1.0.0",
+    "await-timeout": "^0.3.0",
+    "bignumber.js": "^8.0.1",
+    "classnames": "^2.2.6",
+    "ethereumjs-util": "^6.1.0",
+    "ethers": "^5.0.23",
+    "hdkey": "^2.0.1",
+    "identicon.js": "^2.3.3",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "moment": "^2.29.4",
+    "nanoid": "^3.2.0",
+    "react": "^16.8.2",
+    "react-alert": "4.0.4",
+    "react-alert-template-basic": "^1.0.0",
+    "react-app-rewire-hot-loader": "^2.0.1",
+    "react-dom": "^16.8.2",
+    "react-hook-form": "^6.12.1",
+    "react-hot-loader": "^4.12.21",
+    "react-icons": "^4.3.1",
+    "react-md-spinner": "^0.3.0",
+    "react-modal": "^3.8.1",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "5.0.1",
+    "react-tiny-popover": "6.0.4",
+    "react-transition-group": "^2.6.0",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.6.4",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "sass-loader": "7.1.0",
+    "trezor-connect": "^8.1.27",
+    "web3": "^1.0.0-beta.52"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy--beta": "s3_website push --config-dir configs/beta",
+    "deploy--staging": "s3_website push --config-dir configs/staging",
+    "deploy--prod": "s3_website push --config-dir configs/prod"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.6",
+    "@types/react-dom": "^18.0.6",
+    "assert": "^2.0.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "css-loader": "^2.1.1",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.2.1",
+    "sass": "^1.22.10",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
